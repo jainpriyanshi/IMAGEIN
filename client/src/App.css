@@ -18,5 +18,16 @@
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #05032b;
+}
+
+.typed {
+  padding: 20px;
+  background-color: white; 
+  color: black;
+  text-shadow : 2px 2px grey;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  font-size: 2rem
 }
