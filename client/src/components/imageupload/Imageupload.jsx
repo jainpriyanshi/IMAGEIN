@@ -39,6 +39,7 @@
               name="selectedFile"
               onChange={this.onChange}
             />
+            <br></br>
             <button type="submit">Submit</button>
           </form>
         );
