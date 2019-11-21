@@ -17,12 +17,17 @@ const port = process.env.PORT || 3000;
     const upload = multer({ storage });
 
     const app = express();
-
+    var spawn = require("child_process").spawn;
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
 
     app.post('/', upload.single('selectedFile'), (req, res) => {
       console.log(req.file.filename);
-      res.send();
+      var process = spawn('python3',["./inpaintingCode/inpainting.py","./uploads/"+req.file.filename]);
+      console.log("process__started.................")
+      process.stdout.on('data', function(data) { 
+        res.send(data.toString()); 
+    } ) 
+
     });
 module.exports = app;
