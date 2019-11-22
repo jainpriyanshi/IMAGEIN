@@ -31,14 +31,19 @@ function Header() {
            <img style={{height:"50px"}}src={logo} />
           </a>
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
-              Image
+            <Typography variant="h6" className={classes.title} style={{textAlign:"left"}}>
+              Reparatio
           </Typography>
           
           <a href="http://localhost:3001/inpainting">
-          <Button color="inherit">Inpainting</Button>
+          <Button style={{color:"white"}}>Inpainting</Button>
           </a>
-          <Button color="inherit">Blur</Button>
+          <a href="http://localhost:3001/grayscale">
+          <Button style={{color:"white"}}>grayscale</Button>
+          </a>
+          <a href="http://localhost:3001/blur">
+          <Button style={{color:"white"}}>blur</Button>
+          </a>
         </Toolbar>
       </AppBar>
     </div>

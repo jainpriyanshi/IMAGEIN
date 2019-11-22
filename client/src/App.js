@@ -1,19 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import img from './images/bg1.jpg';
 import './App.css';
-import Imageupload from './components/imageupload/Imageupload';
+import Inpainting from './components/inpainting/Inpainting';
 import Header from './components/header/Header';
 import Typist from './components/typist/Typist';
-
+import Grayscale from './components/grayscale/Grayscale'
+import Blur from './components/blur/Blur'
 function App() {
   return (
-    <div >
-      <header>
-        <Header />
-        <p> </p>
-        <Typist />
-        <img src={logo} className="App-logo" alt="logo" />
-        <Imageupload />
+    <div class="App">
+      <header class="App-header">
+         <Header/>
+         <img class="center" src={img}/>
+         <Router>
+           <Route
+           exact
+           path='/'
+           render={()=>(
+             <div>
+               <Typist />
+             </div>
+           )}
+           />
+           <Route
+           exact
+           path='/inpainting'
+           render={()=>(
+             <Inpainting />
+           )}
+           />
+            <Route
+           exact
+           path='/grayscale'
+           render={()=>(
+             <Grayscale />
+           )}
+           />
+         
+         <Route
+           exact
+           path='/blur'
+           render={()=>(
+             <Blur />
+           )}
+           />
+         </Router>
       </header>
     </div>
   );

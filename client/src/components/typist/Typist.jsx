@@ -39,7 +39,7 @@ class TypistComponent extends Component {
         return (
             <div class="center">
                 <div class="typed">
-                    <span> IMAGICA </span><span class="type"></span><span> image </span>
+                    <span> REPARATIO </span><span class="type"></span><span> image </span>
                 </div>
             </div>
         )

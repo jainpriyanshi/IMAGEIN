@@ -2,7 +2,7 @@
     import React, { Component } from 'react';
     import axios from 'axios';
 
-    class Imageupload extends Component {
+    class Inpainting extends Component {
       constructor() {
         super();
         this.state = {
@@ -24,7 +24,7 @@
         let formData = new FormData();
         formData.append('selectedFile', selectedFile);
 
-        axios.post('/', formData)
+        axios.post('/inpainting', formData)
           .then((result) => {
           });
       }
@@ -47,4 +47,4 @@
     }
   
 
-export default Imageupload;
+export default Inpainting;

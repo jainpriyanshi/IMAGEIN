@@ -20,10 +20,29 @@ const port = process.env.PORT || 3000;
     var spawn = require("child_process").spawn;
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
-
-    app.post('/', upload.single('selectedFile'), (req, res) => {
+    app.get('/',(req,res)=>{
+      res.send("hello");
+    })
+    app.post('/inpainting', upload.single('selectedFile'), (req, res) => {
       console.log(req.file.filename);
       var process = spawn('python3',["./inpaintingCode/inpainting.py","./uploads/"+req.file.filename]);
+      console.log("process__started.................")
+      process.stdout.on('data', function(data) { 
+        res.send(data.toString()); 
+    } )
+   }); 
+    app.post('/grayscale', upload.single('selectedFile'), (req, res) => {
+      console.log(req.file.filename);
+      var process = spawn('python3',["./inpaintingCode/grayscale.py","./uploads/"+req.file.filename]);
+      console.log("process__started.................")
+      process.stdout.on('data', function(data) { 
+        res.send(data.toString()); 
+    } ) 
+
+    });
+    app.post('/blur', upload.single('selectedFile'), (req, res) => {
+      console.log(req.file.filename);
+      var process = spawn('python3',["./inpaintingCode/blur.py","./uploads/"+req.file.filename]);
       console.log("process__started.................")
       process.stdout.on('data', function(data) { 
         res.send(data.toString()); 
