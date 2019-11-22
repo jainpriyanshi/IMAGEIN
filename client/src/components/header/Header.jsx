@@ -27,7 +27,7 @@ function Header() {
        <AppBar position="static" style={{backgroundColor:"black",width:"100%", align:"left"}}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton}>
-          <a href="http://localhost:3001">
+          <a href="/">
            <img style={{height:"50px"}}src={logo} />
           </a>
           </IconButton>
@@ -35,13 +35,13 @@ function Header() {
               Reparatio
           </Typography>
           
-          <a href="http://localhost:3001/inpainting">
+          <a href="/inpainting">
           <Button style={{color:"white"}}>Inpainting</Button>
           </a>
-          <a href="http://localhost:3001/grayscale">
+          <a href="/grayscale">
           <Button style={{color:"white"}}>grayscale</Button>
           </a>
-          <a href="http://localhost:3001/blur">
+          <a href="/blur">
           <Button style={{color:"white"}}>blur</Button>
           </a>
         </Toolbar>

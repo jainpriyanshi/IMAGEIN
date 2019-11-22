@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import img from './images/bg1.jpg';
+import img from './images/bg2.jpg';
 import './App.css';
 import Inpainting from './components/inpainting/Inpainting';
 import Header from './components/header/Header';
@@ -12,13 +12,14 @@ function App() {
     <div class="App">
       <header class="App-header">
          <Header/>
-         <img class="center" src={img}/>
+         
          <Router>
            <Route
            exact
            path='/'
            render={()=>(
              <div>
+               <img class="center" src={img}/>
                <Typist />
              </div>
            )}
