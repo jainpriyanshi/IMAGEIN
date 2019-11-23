@@ -5,7 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import logo from './logo.png';
+import logo from './photo-camera.png';
+import FontLoader from 'react-google-font-loader';
 
 
 const useStyles = makeStyles(theme => ({
@@ -31,18 +32,18 @@ function Header() {
            <img style={{height:"50px"}}src={logo} />
           </a>
           </IconButton>
-            <Typography variant="h6" className={classes.title} style={{textAlign:"left"}}>
-              Reparatio
+            <Typography variant="h6" className={classes.title} style={{textAlign:"left", fontFamily:'Roboto'}}>
+              IMAGEIN
           </Typography>
           
-          <a href="/inpainting">
+          <a href="/inpainting" >
           <Button style={{color:"white"}}>Inpainting</Button>
           </a>
-          <a href="/grayscale">
+          <a href="/grayscale" >
           <Button style={{color:"white"}}>grayscale</Button>
           </a>
           <a href="/blur">
-          <Button style={{color:"white"}}>blur</Button>
+          <Button style={{color:"white" }}>blur</Button>
           </a>
         </Toolbar>
       </AppBar>
