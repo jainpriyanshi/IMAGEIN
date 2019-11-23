@@ -77,10 +77,7 @@ class Blur extends Component {
       </Typography>
       <hr></hr>
       <br></br>
-      <Typography variant="body2" color="textSecondary" component="p">
-        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-        across all continents except Antarctica
-      </Typography>
+      
     </CardContent>
   </CardActionArea>
   <CardActions>

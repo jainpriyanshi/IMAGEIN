@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import img from './images/bg2.jpg';
 import './App.css';
 import Inpainting from './components/inpainting/Inpainting';
 import Header from './components/header/Header';
 import Typist from './components/typist/Typist';
 import Grayscale from './components/grayscale/Grayscale'
 import Blur from './components/blur/Blur'
+import Body from './components/Body/Body'
 function App() {
   return (
     <div class="App">
@@ -19,7 +19,7 @@ function App() {
            path='/'
            render={()=>(
              <div>
-               <img class="center" src={img}/>
+               <Body />
                <Typist />
              </div>
            )}

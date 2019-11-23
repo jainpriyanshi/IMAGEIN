@@ -1,5 +1,6 @@
 .App {
   text-align: left;
+  
 }
 
 .App-logo {
@@ -9,8 +10,7 @@
 }
 
 .App-header {
-  background-color: rgb(226, 223, 247);
-  
+  background-color: rgba(226, 223, 247, 0.068);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,11 +27,11 @@
   padding: 20px;
   background-color: black; 
   color: white;
-  width: 100%;
   border-radius: 10px;
   text-align: center;
   font-family: 'Righteous', cursive;
-  font-size: 2rem
+  font-size: 2rem;
+
 }
 .center {
   display: block;
@@ -42,5 +42,11 @@
   margin-top:5px;
   margin-bottom: 5px;
   object-fit: contain;
-  background:black;
+  background:nhi black;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Righteous', cursive;
+
 }

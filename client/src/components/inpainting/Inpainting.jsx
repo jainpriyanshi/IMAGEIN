@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+  
+    import React, { Component } from 'react';
     import axios from 'axios';
     import Grid from '@material-ui/core/Grid';
     import Button from '@material-ui/core/Button';
@@ -16,7 +17,12 @@ import React, { Component } from 'react';
 import { BottomNavigation } from '@material-ui/core';
 import PublishIcon from '@material-ui/icons/Publish';
 import ImageSearchIcon from '@material-ui/icons/ImageSearch';
+import Background from './bg1.jpeg';
 
+
+var sectionStyle = {
+  backgroundImage: "url(" + { Background } + ")"
+};
     class Inpainting extends Component {
       constructor() {
         super();
@@ -48,6 +54,9 @@ import ImageSearchIcon from '@material-ui/icons/ImageSearch';
         const {  selectedFile } = this.state;
   
         return (
+          <div>
+          <section style={ sectionStyle }>
+      </section>
           <Grid 
           container
           spacing={0}
@@ -73,10 +82,7 @@ import ImageSearchIcon from '@material-ui/icons/ImageSearch';
           </Typography>
           <hr></hr>
           <br></br>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
+          
         </CardContent>
       </CardActionArea>
       <CardActions>
@@ -131,7 +137,7 @@ variant="round"
             </Grid>
           
           
-
+            </div>
 
           );
       }

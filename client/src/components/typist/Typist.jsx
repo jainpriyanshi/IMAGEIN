@@ -20,7 +20,7 @@ class TypistComponent extends Component {
     componentDidMount() {
         document.addEventListener('DOMContentLoaded', function () {
             new Typed('.type', {
-                strings: ["inpaints", "blur", "grayscale"],
+                strings: ["inpaints", "blur", "resize", "crop"],
                 stringsElement: null,
                 typeSpeed: 80,
                 startDelay: 600,
