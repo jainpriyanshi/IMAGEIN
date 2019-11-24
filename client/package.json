@@ -13,6 +13,7 @@
     "react-scripts": "3.2.0",
     "redux": "^4.0.4",
     "typed.js": "^2.0.11",
+    "typeface-roboto": "0.0.75",
     "video-react": "^0.14.1"
   },
   "scripts": {

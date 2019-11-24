@@ -46,7 +46,7 @@ def F(x, a):
 
 for i in range(w):
     for j in range(h):
-        if i + j >= 120 and i + j <= 121:
+        if (i-100)**2 + (j-100)**2 >= 220 and (i-100)**2 + (j-100)**2 <= 300:
             new[i][j] = 1
             mask[i][j] = 255
         else:
