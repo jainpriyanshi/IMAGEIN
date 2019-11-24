@@ -11,8 +11,8 @@ git clone https://github.com/jainpriyanshi/IMAGEIN.git
 cd IMAGEIN
 ```
 
-* ### Install dependencies for frontend
-> Directory now is to be changed to `client`
+* ### Install dependencies for Backend
+> Directory now is to be changed to `server`
 ```
 cd server
 npm install
@@ -33,7 +33,7 @@ npm install
 ```
 npm start
 ```
-> Its up and running.
+> Its up and running on port 3000.
 
 * ### Run `production build`
 ```
