@@ -28,6 +28,7 @@ var sectionStyle = {
         super();
         this.state = {
           selectedFile: '',
+          mask:'',
         };
       }
 
@@ -107,7 +108,24 @@ var sectionStyle = {
       >
         CHOOSE IMAGE
       </Button>
-         </label>      
+         </label>
+         <input
+           type="file"
+           name="mask"
+           //onChange={this.onChange}
+           style={{ display: "none" }}
+           id="contained-button"
+         />
+         <label htmlFor="contained-button">
+         <Button
+        variant="contained"
+        color="primary"
+        component="span" size="medium"
+        startIcon={<ImageSearchIcon />}
+      >
+        CHOOSE MASK
+      </Button>      
+      </label>
          
            
 

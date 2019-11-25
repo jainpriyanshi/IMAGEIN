@@ -22,3 +22,5 @@ for i in range(w):
 
 plt.imshow((new).astype(npy.uint8))
 plt.show()
+
+

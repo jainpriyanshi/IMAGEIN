@@ -55,7 +55,7 @@ for i in range(w):
 
 plt.imshow((mask).astype(npy.uint8))
 plt.show()
-
+#img.imsave("mask2.png",(mask).astype(npy.uint8))
 plt.imshow((new).astype(npy.uint8))
 plt.show()
 
@@ -129,3 +129,5 @@ for _ in range(20):
 
 plt.imshow((new).astype(npy.uint8))
 plt.show()
+
+
