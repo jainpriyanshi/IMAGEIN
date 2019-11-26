@@ -15,6 +15,7 @@ cd IMAGEIN
 > Directory now is to be changed to `server`
 ```
 cd server
+mkdir Uploads
 npm install
 ```
 * ### Run `development server`
